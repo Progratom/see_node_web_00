@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+  <style>
+    .tab {
+      display: inline-block;
+      margin-left: 1em
+    }
+    .tab_big {
+      display: inline-block;
+      margin-left: 3em
+    }
+
+  </style>
+</head>
+<body>
+    <p>*****introduction****<br>
+        Hi, and welcome to the my bot. Here follows list of possible inputs. <br>
+         <span class="tab">-quote<br>
+        -quote:'surname_of_author'<br>
+        -fact<br>
+        -rhyme:'language (cze, eng, lat, elf)':'word_to_rhyme'<br>
+        -cipher:<i>
+            NOTE: all of them are using small letters of english alphabet - 26 characters</i></span><br>
+            <span class="tab_big">-to_morse:"word_to_translate"<br>
+            -to_morse:"word_to_translate":"symbol_for '.'":symbol_for '_':symbol_for '/'<br>
+            -from_morse:"text_to_translate" using '.' '_' and '/', without spaces<br>
+            -backwards:"text_to_translate"<br>
+            -skipping:"text_to_translate" ressult is every second character. Between are random letters.<br>
+            -first_last:"text_to_translate"<br>
+            -random_rearrange:"text_to_traslate"<br>
+            -skipp02:"text_to_traslate" every second letter and then back<br>
+            -caesar:"text_to_traslate":"number_of_move"<br>
+            -addition:"text_to_traslate":"password"<br>
+            -backwards_alphabet:"text_to_traslate"<br>
+            -own_alphabet:"text_to_traslate":'27 characters of new alphabet<br>
+            -to_numbers:"text_to_traslate"<br>
+            -from_numbers:"numbers with spaces to translate to letters"<br>
+            -pair:"text_to_traslate"<br>
+            -nokia:"text_to_traslate"<br>
+            -nokia02:text_to_traslate</p>
+  
+    <form method="POST">
+        <input type="text" name="input_line">
+        <input type="submit">
+    </form>
+    <hr>
+    Input: {{ input }} <br>
+    Output: {{ output }}
+</body>
+</html>
